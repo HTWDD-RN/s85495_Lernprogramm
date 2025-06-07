@@ -1,4 +1,4 @@
-# Web-basiertes Lernprogramm – Keyur Kachhadiya
+# Lernprogramm – Keyur Kachhadiya(s85495)
 
 Die Lernapp ist unter https://www.informatik.htw-dresden.de/~s85495/Lernprogramm/ aufrufbar.
 
