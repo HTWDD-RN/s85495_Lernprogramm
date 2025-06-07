@@ -1,0 +1,33 @@
+{
+    "name": "Lernplatform",
+    "short_name": "Lernplatform",
+    "start_url": ".",
+    "background_color": "#6dcdb1",
+    "theme_color": "#009578",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "image/icon2.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": [
+        {
+            
+            "src": "image/icon2.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "platform": "desktop",
+            "form_factor": "wide"
+        },
+        {
+            
+            "src": "image/icon2.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+
+    "error_icon": "installability-error-icon.png"
+}

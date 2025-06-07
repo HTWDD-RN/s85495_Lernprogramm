@@ -1,0 +1,287 @@
+/*. for class
+  # for id */
+
+
+  /*for background color*/
+ body {
+  background-color: #ffffe0; /* Plain background */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  overflow: auto;
+  text-align: center;
+  background-color: #ffffe0; /* Light yellow */
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 600px;
+  border: 2px solid gray;
+}
+
+section {
+  max-width: 800px;
+  margin: auto;
+}
+
+section:nth-child(2) {
+  font-size: 20px;
+}
+
+.category-button {
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.category-button:hover {
+  background-color: #ddd;
+}
+
+  .option {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(236, 236, 236);
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .active {
+    background-color: blue;
+  }
+  
+  .content {
+    display: none;
+  }
+  
+  .active-content {
+    display: block;
+  }
+  
+  .selected {
+    background-color: black;
+    color: white; /* to ensure text is visible on black background */
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: #1a1f29;
+    position: relative;
+    height: 47px;
+}
+
+.navbar a { /*for text in navbar*/
+    float: left;
+    display: block;
+    color: #e4e3e3;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.container {
+  text-align: center; /* Center the content within the container */
+}
+
+section {
+  margin: auto; /* Center the section horizontally */
+  max-width: 800px; /* Limit the width of the section */
+}
+
+section:nth-child(2) {
+  font-size: 20px; /* Increase font size for the second section */
+}
+
+.container ul {
+  list-style-type: none;/* Remove the bullet points */
+  padding: 0; /* Remove default padding   Padding is the space between the content and the border of an element.*/
+}
+
+.container ul li {
+  margin-bottom: 12px; /* Add some margin between list items */
+  color: rgb(1, 0, 0); /* Set the color of the bullet points to black */
+  padding-left: 5px;
+}
+/*to change the color of home*/
+#accent-background {
+  color: red; /* Change the color of the "HOME" link to red (you can use any color you prefer) */
+}
+
+#paragraph {
+  text-align: center;   
+  font-family: "Sofia", sans-serif;
+}
+
+      /* to make the Text Size big and bold*/
+.header {
+  font-size: 2em; /* Adjust the size as needed */
+  font-weight: bold;
+}
+#StartQuizbutton {
+  text-align: center;
+}
+
+.button {
+  font-size: 1.5em; /* Adjust the size as needed */
+  font-weight: bold;
+  color: #ffffff; /* Change color as desired */
+  background-color: #4CAF50; /* Change background color as desired */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049; /* Change hover background color as desired */
+}
+
+/*for the checkbox to be bigger and scrollbar*/
+.container {
+  overflow: auto; /* Enable scrolling for content exceeding container size */
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px; /* Width of the switch */
+  height: 34px; /* Height of the switch */
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px; /* Height of the knob */
+  width: 26px; /* Width of the knob */
+  left: 4px; /* Positioning of the knob */
+  bottom: 4px; /* Positioning of the knob */
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.header {
+  text-align: center;
+}
+#Topic {
+  text-align: center;
+}
+
+/*for question answer buttoon and container*/
+.QuestionAnswer {
+  margin-top: 20px; /* Adjust spacing between question and buttons */
+}
+
+.quizanswer {
+  display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.quizanswer button {
+  width: 45%;
+  margin: 0.5rem 1%;
+  height: 4rem;
+  border-radius: 10px;
+  border-style: none;
+}
+
+.Quizpart {
+  display: none;
+  position: relative; /* or use static */
+  top: 50px; /* Adjust this value based on the height of your navigation bar */
+  font-family: Arial, sans-serif; /* Change the font family */
+}
+      /*to make the Mathematik , ... bold and colored*/
+.Quizpart h1 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: rgb(255, 60, 0); /* Example color, you can use any color value */
+}
+
+      /*For Progressbar*/
+.progress-container {
+  display: flex;
+  flex-direction: column; /* Display progress bars as columns */
+}
+
+#myProgress, #myProgress1 {
+  width: 100%;
+  background-color: #ddd;
+  margin-bottom: 10px; /* Optional: Adjust space between bars */
+}
+
+#myBar, #myBar1 {
+  width: 0%;
+  height: 30px;
+}
+
+#myBar {
+  background-color: #04AA6D;
+}
+
+#myBar1 {
+  background-color: #aa0404;
+}
+
+/*Mathematik..*/
+.category-link {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+

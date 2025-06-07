@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Honk+One">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <!--katex-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                renderMathInElement(document.body, {
+                    // customised options
+                    // • auto-render specific keys, e.g.:
+                    delimiters: [
+                        {left: '$$', right: '$$', display: true},
+                        {left: '$', right: '$', display: false},
+                        {left: '\\(', right: '\\)', display: false},
+                        {left: '\\[', right: '\\]', display: true}
+                    ],
+                    // • rendering keys, e.g.:
+                    throwOnError : false
+                });
+            });
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#009578">
+       
+        <link rel="stylesheet" , href="css/beleg.css">
+        <link rel="manifest" href="manifest.json">
+        <link rel="apple-touch-icon" href="image/icon.webp">
+        <title>LernProgramm</title>
+        <meta charset="UTF-8">
+        <meta name="mobile-web-app-capable" content="yes" />
+        <link rel="icon" href="image/titleicon.webp" type="image/x-icon"> <!--title icon-->
+
+    </head>
+
+    <body>
+        <!--For navigation bar-->
+        <div class="navbar">
+            <!--uniquely identifies an element,"#" is a placeholder URL often used in HTML to create a link
+                                    that  doesn't navigate anywhere when clicked.-->
+                                    <!--i hab remove the menutoggle for now-->
+                    <a id="accent-background" href="#" onclick="ShowHome(); return false"><u>HOME</u></a> <!--it will call the showhome function from js datei--> 
+                    <a href="#" onclick="ShowMaths();  return false;">MATHEMATIK</a>
+                    <a href="#" onclick="ShowIT(); return false;">INTERNETTECHNOLOGIE</a>
+                    
+                    <a href="#" onclick="Allgemein(); return false;">ALLGEMEIN</a>
+                    <!--<button id="menu-button" onclick="MenuToggle()"><i class="fa-solid fa-bars"></i></button>-->
+        </div>
+
+        <div class="homepage">
+        <section>
+            <div class="container">
+            <h1><u style="text-decoration-color: rgb(12, 12, 12);">Kategorien:</u></h1>
+            <button class="category-button" onclick="ShowMaths()">Mathe</button>
+            <button class="category-button" onclick="ShowIT()">IT</button>
+            <button class="category-button" onclick="ShowNoteLernen()">NoteLernen</button>
+            <button class="category-button" onclick="Allgemein()">Allgemein</button>
+            </div>
+        </section>
+        </div>
+
+            
+        
+                <!--When mathematik or Internecttechnolie is clicked-->
+
+
+        <div class ="Quizpart" style="display: none;"> 
+            <p>       </p>
+            <h1 class="header"> Mathematik</h1>  <!--it needs to be changed with button-->
+            <b> <p id ="Topic">Here are  the questions related with Mathematik are asked </b></p>
+
+            <div class="container">
+                <div id="restApiToggle" style="display: none;">
+                <p>Nutze REST-API:</p>
+                <label class="switch">
+                    <input id="toggle-button" type="checkbox" onclick="toggleButton()">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            </div>
+            
+            <div id ="StartQuizbutton">
+                <p>
+
+                </p>
+                <button class="button" onclick="StartQuiz()">Quiz starten</button>
+            </div>
+
+
+        </div>
+
+        <div class="QuestionAnswer" style="display: none; text-align: center;">
+
+                        <!--For Progress Bar-->
+        
+            <div class="progress-container">
+                <div id="myProgress">
+                    <div id="myBar"></div>
+                </div>
+                <div id="myProgress1">
+                    <div id="myBar1"></div>
+                </div>
+            </div>
+
+            <div class="quizQuestion">
+            <h2 id="quizQuestionText">Questions</h2>
+            <div id="vexflow-container"></div> <!-- For rendering VexFlow music notes -->
+            </div>
+
+
+                
+                <div class="quizanswer">
+                    <button type="button" id="answerButton0">Antwort 1</button>
+                    <button type="button" id="answerButton1">Antwort 2</button>
+                    <button type="button" id="answerButton2">Antwort 3</button>
+                    <button type="button" id="answerButton3">Antwort 4</button>
+                </div>
+        
+                <div class ="ShowResult" style="display: none;">
+                    <canvas id="myPieChart" width="400" height="400"></canvas>
+                    <p id="Result_Description">  Hello nepal </p>
+                </div>
+            
+        </div>
+        
+    </body>
+  
+    <script src="beleg.js"></script>
+    <script src="index.js"></script>
+    <!--<script scr="restapi.js"></script>-->  
+    <script src="https://unpkg.com/vexflow/releases/vexflow-min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
+        
+</html>
